@@ -40,212 +40,70 @@ p {
 
 /********************************  TEST SECTION ****************************/
 
-.gallerytitle{
 
-  background-color: #111;
-  padding: 50%;
-  padding-top: 100px;
-}
 
 /********************************  TEST SECTION END ****************************/
 
 /******************************** NAV MENU START ****************************/
 
+  /* Navbar container */
+.navbar {
+  background-color: rgb(255, 255, 255);
+  font-family: Arial;
+  display: flex;
+  justify-content: center;
 
+}
 
- /* Navbar container */
- .navbar {
-    margin-left: 40%;
-    margin-right: 40%;
-    background-color: #333;
-    font-family: Arial;
-  }
-  
+/* The dropdown container */
+.dropdown {
+  float: center;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  border: none;
+  background-color:#ffffff;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: rgb(255, 255, 255);
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: center;
+  color: rgb(148, 148, 148);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: rgb(255, 255, 255);
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+} 
 
   
-  /* The dropdown container */
-  .dropdown {
-    float: center;
-    overflow: hidden;
-  }
-  
-  /* Dropdown button */
-  .dropdown .dropbtn {
-    font-size: 16px;
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit; /* Important for vertical align on mobile phones */
-    margin: 0; /* Important for vertical align on mobile phones */
-  }
-  
-  /* Add a red background color to navbar links on hover */
-  .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: rgb(87, 87, 87);
-  }
-  
-  /* Dropdown content (hidden by default) */
-  .dropdown-content {
-    display: none;
-    float: center;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: center;
-  }
-  
-  /* Add a grey background color to dropdown links on hover */
-  .dropdown-content a:hover {
-    background-color: #ddd;
-  }
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {
-    display: block;
-  } 
 /********************************  NAV MENU END ****************************/
-
-
-/******************************** GALLERY START ****************************/
-#gallery {
-  line-height:0;
-  -webkit-column-count:5; /* split it into 5 columns */
-  -webkit-column-gap:5px; /* give it a 5px gap between columns */
-  -moz-column-count:5;
-  -moz-column-gap:5px;
-  column-count:5;
-  column-gap:5px;
-}
-
-#gallery img {
-  width: 100% !important;
-  height: auto !important;
-  margin-bottom:5px; /* to match column gap */
-}
-
-@media (max-width: 1200px) {
-  #gallery {
-   -moz-column-count:    4;
-   -webkit-column-count: 4;
-   column-count:         4;
-  }
-}
-
-@media (max-width: 1000px) {
-  #gallery {
-   -moz-column-count:    3;
-   -webkit-column-count: 3;
-   column-count:         3;
-  }
-}
-
-
-@media (max-width: 800px) {
-  #gallery {
-   -moz-column-count:    2;
-   -webkit-column-count: 2;
-   column-count:         2;
-  }
-}
-
-
-@media (max-width: 400px) {
-  #gallery {
-   -moz-column-count:    1;
-   -webkit-column-count: 1;
-   column-count:         1;
-  }
-}
-
-
-/********************************  GALLERY END ****************************/
-
-/******************************** Contact Start ***************************/
-
-.fcf-form-id {
-  font-family: 'Abel';font-size: 22px;
-  position: relative;
-  text-align: center;
-  font-size: 15px;
-
-}
-
-
-.fcf-form-group {
-  font-family: 'Abel';font-size: 22px;
-  position: relative;
-  text-align: center;
-  font-size: 15px;
-
-}
-
-.fcf-input-group {
-
-  font-family: 'Abel';font-size: 22px;
-  position: relative;
-  text-align: center;
-  font-size: 15px;
-  width: 100%;
-  
-}
-
-.fcf-label {
-  font-family: 'Abel';font-size: 22px;
-  position: relative;
-  text-align: center;
-  font-size: 15px;
-}
-
-.contact {
-  font-family: -apple-system, Arial, sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-  color: #000000;
-  text-align: center;
-  float: none;
-  background-color: #979797;
-  padding-top: 4%;
-  padding-bottom: 5%;
-}
-
-.footer {
-  font-family: -apple-system, Arial, sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-  color: #000000;
-  text-align: center;
-  float: none;
-  background-color: #000000;
-   
-  
-}
-
-.p.footer {
-  font-family: -apple-system, Arial, sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-  color: #ffffff;
-
-}
-
-.main {
-  padding-bottom: 6%;
-  padding-top: 3%;
-}
-
-
 
 
 
