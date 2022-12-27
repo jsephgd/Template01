@@ -102,7 +102,15 @@ p {
 .dropdown:hover .dropdown-content {
   display: block;
 } 
+/* footer */
 
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+
+}
   
 /********************************  NAV MENU END ****************************/
 
